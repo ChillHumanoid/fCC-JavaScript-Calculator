@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #dff9fb;
+    --main-blue: #4b7583;
+    --main-red: #bd3124;
+    --dark-gray:  #323232;
+    --light-gray: #A5A5A5;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    color: #000;
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+    font-size: 1rem;
+    position: fixed;
+    margin-bottom: 500px;
+} 
+
+.calculator {
+    height: 400px;
+    width: 250px;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.display {
+    width: 100%;
+    height: 70px;
+    text-align: right;
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    font-size: 40px;
+    font-family: 'VT323', monospace;
+    flex-wrap: wrap;
+}
+
+.nums-container {
+    width: 75%;
+}
+
+.ops-container {
+    width: 25%;
+}
+
+button {
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    font-size: 25px;
+    font-family: 'VT323', monospace;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.vertical {
+    height: 110px;
+    border-radius: 50px;
+}
+
+button.horizontal {
+    width: 110px;
+    border-radius: 50px;
+}
+
+button.blue {
+    background-color: var(--main-blue);
+    color: #fff;
+}
+
+button.dark-gray {
+    background-color: var(--dark-gray);
+    color: #fff;
+}
+
+button.red {
+    background-color: var(--main-red);
+    width: 92.5%;
+}
+
+button.light-gray {
+    background-color: var(--light-gray);
+}
+
+button.ac {
+    margin-right: 50%;
+}
+
+.footer {
+    font-family: 'Share Tech Mono', monospace;
+    color: #22333b;
+    margin-top: 500px;
+    font-size: 1rem;
+    position: fixed;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--main-blue);
+}
+
+.footer a:hover {
+    color: var(--main-red);
+}
